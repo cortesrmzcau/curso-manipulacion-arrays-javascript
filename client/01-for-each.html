@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - For each</title>
+</head>
+<body>
+    
+    <!-- <div id="app"></div> -->
+    <div id="app2"></div>
+    
+    <script>
+        // const products = [
+        //     { title: 'Burger', price: 121 },
+        //     { title: 'Pizza', price: 20 }
+        // ];
+
+        // const app = document.getElementById('app');
+        // products.forEach(product => {
+        //     app.innerHTML += `<li> ${product.title} - ${product.price} </li`;
+        // });
+
+        const taks = [
+            { title: 'Tarea de Programación', date: '29/05/2022', description: 'Tarea sobre arreglos', status: 'complete' },
+            { title: 'Tarea de Calculo Integral', date: '30/05/2022', description: 'Tarea sobre ecuaciones', status: 'incomplete' },
+            { title: 'Tarea de Electronica', date: '31/05/2022', description: 'Tarea sobre leds', status: 'complete' },
+        ];
+
+        const app2 = document.getElementById('app2');
+        taks.forEach( taks => {
+            app2.innerHTML += `<li> ${taks.title} - <input type='checkbox' ${taks.status == 'complete' ? 'checked': ''}> </li>`;
+        });
+    </script>
+</body>
+</html>
